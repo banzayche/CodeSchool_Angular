@@ -2,9 +2,9 @@ var express = require("express");
 var app = express();
 
 /* serves main page */
-// app.get("/", function(req, res) {
-//    res.sendfile('public/index.html')
-// });
+app.get("/", function(req, res) {
+   res.sendfile('public/index.html')
+});
 
 // app.post("/user/add", function(req, res) { 
 // 	/* some server side logic */

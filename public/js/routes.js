@@ -22,4 +22,8 @@ angular.module('NoteWrangler').config(function($routeProvider){
 			templateUrl: '/public/templates/notes-edit.html',
 			controller: 'NotesEditController'
 		})
+
+		.otherwise({
+        	redirectTo: '/'
+      	});
 });
