@@ -3,8 +3,6 @@ angular.module('NoteWrangler')
 		$scope.note = Note.get({id: $routeParams.id});
 
 		$scope.saveNote = function(note){
-			note.update().$promise.finally(function(){
-				console.log('FINAL')
-			});
+			note.$update();
 		};
 	});

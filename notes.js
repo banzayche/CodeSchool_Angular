@@ -1,4 +1,4 @@
-[
+exports.notes = [
 	{
 		"name": "note1",
 		"body": "This is a perfect note in a perfect world",
@@ -14,4 +14,4 @@
 		"body": "note3 is too not so bad. Try it.",
 		"id": 2
 	}
-]
+];
