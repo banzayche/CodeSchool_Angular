@@ -1,1 +1,19 @@
-<h1>Notes New</h1>
+<h1>New: {{note.name}}</h1>
+<form class="col-sm-6">
+	<fieldset class="form-group">
+		<label for="name">Name</label>
+		<input class="form-control" type="text" id="name" name="name" ng-model="note.name"></input>
+	</fieldset>
+
+	<fieldset class="form-group">
+		<label for="body">Body</label>
+		<input class="form-control" type="text" id="body" name="body" ng-model="note.body"></input>
+	</fieldset>
+
+	<fieldset class="form-group">
+		<label for="name">Category</label>
+		<select ng-options='category.id as category.name for category in categories' ng-model="note.categoryId"></select>
+	</fieldset>
+
+	<input type="submit" value="{{isSubmitting ? 'saving...' : 'Save'}}" class="btn btn-default" ng-click="saveNote(note)" ng-disabled="isSubmitting"></input>
+</form>

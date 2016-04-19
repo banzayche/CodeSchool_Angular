@@ -8,13 +8,17 @@ angular.module('NoteWrangler').config(function($routeProvider){
 			controller: 'NotesIndexController'
 		})
 		
+		.when('/about', {
+			templateUrl: '/public/templates/about.html'
+		})
+
 		.when('/notes/new', {
 			templateUrl: '/public/templates/notes-new.html',
 			controller: 'NotesCreateController'
 		})
 		
 		.when('/notes/:id', {
-			templateUrl: '/public/templates/notes-item.html',
+			templateUrl: '/public/templates/notes-show.html',
 			controller: 'NotesShowController'
 		})
 		

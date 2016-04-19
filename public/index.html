@@ -5,7 +5,19 @@
 	<link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body>
-	<h2 class="text-center primary">Hello World</h2>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<div class="navbar-brand">
+					<a href="#/">NoteWrangler</a>
+				</div>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><a href="#/">Main</a></li>
+				<li><a href="#/about">About</a></li>
+			</ul>
+		</div>
+	</nav>
 	<ng-view class="container-fluid"></ng-view>
 </body>
 
@@ -26,4 +38,6 @@
 	<script type="text/javascript" src="/public/js/controllers/NotesShowController.js"></script>
 	<!-- services -->
 	<script type="text/javascript" src="/public/js/services/note.js"></script>
+	<!-- directives -->
+	<script type="text/javascript" src="/public/js/directives/nwCategorySelector.js"></script>
 </html>

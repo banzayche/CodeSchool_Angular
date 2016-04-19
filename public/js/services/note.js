@@ -5,3 +5,7 @@ angular.module('NoteWrangler').factory('Note', function($resource){
 		}
 	});
 });
+
+angular.module('NoteWrangler').factory('Category', function($resource){
+	return $resource('/categories');
+});
