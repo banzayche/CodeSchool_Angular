@@ -3,4 +3,5 @@ angular.module('NoteWrangler')
 		$scope.notes = Note.query();
 		console.log($scope.notes);
 		$scope.search = {};
+		window.s = $scope;
 	});
